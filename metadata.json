@@ -1,0 +1,6 @@
+{
+  "name": "ResuBuilder Pro",
+  "description": "An ATS-friendly resume builder and optimizer with landing page, workspace account signup, personalized drafts manager dashboard, Gemini AI scoring, and perfect PDF download.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

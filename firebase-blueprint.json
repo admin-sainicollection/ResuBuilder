@@ -1,0 +1,33 @@
+{
+  "entities": {
+    "Resume": {
+      "title": "Resume",
+      "description": "A customized resume created by a user",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "creatorToken": { "type": "string" },
+        "title": { "type": "string" },
+        "personalInfo": { "type": "object" },
+        "summary": { "type": "string" },
+        "experiences": { "type": "array" },
+        "educations": { "type": "array" },
+        "skills": { "type": "array" },
+        "projects": { "type": "array" },
+        "certifications": { "type": "array" },
+        "templateId": { "type": "string" },
+        "themeColor": { "type": "string" },
+        "sectionOrder": { "type": "array" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["creatorToken", "title", "createdAt", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "/resumes/{resumeId}": {
+      "schema": "Resume",
+      "description": "Collection of all saved resumes"
+    }
+  }
+}
